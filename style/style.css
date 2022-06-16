@@ -1,0 +1,843 @@
+:root {
+    --page-color : #f4f4f4;
+    --blue-card : #7cb3ff;
+    --blue-card-hr: white;
+    --blue-card-text: white;
+    --text-color: #454545;
+    --card: white;
+    --notice-list-background: #fcfcfc;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --page-color: #212121;
+        --blue-card: #005db4;
+        --blue-card-hr: white;
+        --blue-card-text: white;
+        --text-color: white;
+        --card: #363636;
+        --notice-list-background: #4a4a4a;
+    }
+}
+@media all and (min-width:100px) and (max-width:320px) {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        background-color: var(--card);
+        margin: 0 0 15px 0;
+    }
+
+    header > .top > h1 {
+        margin: 18px 20px 0 20px;
+        font-size: 7pt;
+        float: right;
+        color: var(--text-color);
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .top > a >.logo {
+        margin: 10px 0 10px 22px;
+        width: 16.82%;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--page-color) ;
+        font-family: "Apple SD Gothic Neo", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card {
+        z-index: -1;
+        margin: 10px auto;
+        border-radius: 10px;
+        width: 95.56%;
+        padding: 10px 0 10px 0;
+        background-color: var(--card);
+        color: var(--text-color);
+    }
+
+    .card > h1 {
+        margin: 8px 0 10px 0;
+        padding: 0 0 0 25px;
+        font-size: 9pt;
+        font-weight: bold;
+    }
+
+    .card > .more {
+        font-size: 6pt;
+        margin: -25px 15px 20px 0;
+        padding: 4px 0 0 0;
+        float: right;
+    }
+
+    .cardLogo {
+        margin: 3px 5px 0 10px;
+        float: left;
+        width: 20px;
+    }
+
+    .articleTypeA {
+        float: left;
+        border-radius: 10px;
+        margin: 5px 8px 0 10px;
+        padding: 3px 0 0 0;
+        width: 25px;
+        height: 23px;
+        text-align: center;
+
+    }
+
+    .articleTypeA > a {
+        width: 100%;
+        height: 100%;
+        font-size: 6pt;
+        color: var(--blue-card-text);
+        font-weight: bold;
+    }
+
+    .card > dl {
+        margin: 0 auto;
+        width: 90%;
+        text-decoration-color: #454545;
+        font-weight: normal;
+    }
+
+    .card > dl > .listDeco {
+        margin: 5px;
+        padding: 2% 0 3% 0;
+        border-radius: 10px;
+        background: var(--notice-list-background);
+    }
+
+    .card > dl > .listDeco > a{
+        font-size: 10pt;
+    }
+
+    .card > dl > .listDeco > dt {
+        width: 80%;
+        margin: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 6pt;
+    }
+
+    .card > dl > .listDeco > dd {
+        margin: 2px 0 0 40px;
+        font-size: 7pt;
+    }
+
+    .card > div {
+        text-align: center;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 95.56%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .mapA {
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 50px;
+        font-size: 9pt;
+        color: var(--text-color);
+    }
+
+    .card > .info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .datafail {
+        text-align: center;
+        font-size: 8pt;
+    }
+
+    .maplogo {
+        float: left;
+        width: 15px;
+        margin: 0 5px 0 0;
+    }
+}
+
+@media all and (min-width:321px) and (max-width:428px) {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        background-color: var(--card);
+        margin: 0 0 15px 0;
+    }
+
+    header > .top > h1 {
+        margin: 18px 20px 0 20px;
+        font-size: 9pt;
+        float: right;
+        color: var(--text-color);
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .top > a >.logo {
+        margin: 10px 0 10px 22px;
+        width: 16.82%;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--page-color) ;
+        font-family: "Apple SD Gothic Neo", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card {
+        z-index: -1;
+        margin: 10px auto;
+        border-radius: 10px;
+        width: 95.56%;
+        padding: 10px 0 10px 0;
+        background-color: var(--card);
+        color: var(--text-color);
+    }
+
+    .card > h1 {
+        margin: 8px 0 10px 0;
+        padding: 0 0 0 25px;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    .card > .more {
+        font-size: 7pt;
+        margin: -25px 15px 20px 0;
+        padding: 4px 0 0 0;
+        float: right;
+    }
+
+    .cardLogo {
+        margin: 3px 5px 0 10px;
+        float: left;
+        width: 20px;
+    }
+
+    .articleTypeA {
+        float: left;
+        border-radius: 10px;
+        margin: 5px 8px 0 10px;
+        padding: 3px 0 0 0;
+        width: 25px;
+        height: 23px;
+        text-align: center;
+
+    }
+
+    .articleTypeA > a {
+        width: 100%;
+        height: 100%;
+        font-size: 6pt;
+        color: var(--blue-card-text);
+        font-weight: bold;
+    }
+
+    .card > dl {
+        margin: 0 auto;
+        width: 90%;
+        text-decoration-color: #454545;
+        font-weight: normal;
+    }
+
+    .card > dl > .listDeco {
+        margin: 5px;
+        padding: 2% 0 3% 0;
+        border-radius: 10px;
+        background: var(--notice-list-background);
+    }
+
+    .card > dl > .listDeco > a{
+        font-size: 10pt;
+    }
+
+    .card > dl > .listDeco > dt {
+        width: 80%;
+        margin: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 6pt;
+    }
+
+    .card > dl > .listDeco > dd {
+        margin: 2px 0 0 40px;
+        font-size: 7pt;
+    }
+
+    .card > div {
+        text-align: center;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 95.56%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .mapA {
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 50px;
+        font-size: 9pt;
+        color: var(--text-color);
+    }
+
+    .card > .info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .datafail {
+        text-align: center;
+        font-size: 8pt;
+    }
+
+    .maplogo {
+        float: left;
+        width: 15px;
+        margin: 0 5px 0 0;
+    }
+}
+
+/*모바일과 태블릿의 중간 */
+@media all and (min-width:428px) and (max-width:766px) {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        background-color: var(--card);
+        margin: 0 0 15px 0;
+    }
+
+    header > .top > h1 {
+        margin: 20px 20px 0 20px;
+        font-size: 12pt;
+        float: right;
+        color: var(--text-color);
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .top > a >.logo {
+        margin: 10px 0 10px 22px;
+        width: 80px;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--page-color) ;
+        font-family: "Apple SD Gothic Neo", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card {
+        z-index: -1;
+        margin: 10px auto;
+        border-radius: 10px;
+        width: 95.56%;
+        padding: 10px 0 10px 0;
+        background-color: var(--card);
+        color: var(--text-color);
+    }
+
+    .card > h1 {
+        margin: 8px 0 15px 0;
+        padding: 0 0 0 25px;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    .card > .more {
+        font-size: 10pt;
+        margin: -25px 15px 20px 0;
+        padding: 4px 0 0 0;
+        float: right;
+    }
+
+    .cardLogo {
+        margin: 3px 5px 0 15px;
+        float: left;
+        width: 25px;
+    }
+
+    .articleTypeA {
+        float: left;
+        border-radius: 10px;
+        margin: 5px 12px 0 10px;
+        padding: 5px 2px 0 2px;
+        width: 25px;
+        height: 23px;
+        text-align: center;
+
+    }
+
+    .articleTypeA > a {
+        width: 100%;
+        height: 100%;
+        font-size: 8pt;
+        color: var(--blue-card-text);
+        font-weight: bold;
+    }
+
+    .card > dl {
+        margin: 0 auto;
+        width: 90%;
+        text-decoration-color: #454545;
+        font-weight: normal;
+    }
+
+    .card > dl > .listDeco {
+        margin: 5px;
+        padding: 2% 0 3% 0;
+        border-radius: 10px;
+        background: var(--notice-list-background);
+    }
+
+    .card > dl > .listDeco > a{
+        font-size: 11pt;
+    }
+
+    .card > dl > .listDeco > dt {
+        width: 80%;
+        margin: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 6pt;
+    }
+
+    .card > dl > .listDeco > dd {
+        margin: 2px 0 0 40px;
+        font-size: 8pt;
+    }
+
+    .card > div {
+        text-align: center;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 95.56%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .mapA {
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 50px;
+        font-size: 9pt;
+        color: var(--text-color);
+    }
+
+    .card > .info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .datafail {
+        text-align: center;
+        font-size: 8pt;
+    }
+
+    .maplogo {
+        float: left;
+        width: 15px;
+        margin: 0 5px 0 0;
+    }
+}
+
+/*태블릿*/
+@media all and (min-width:767px) and (max-width:1024px) {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        background-color: var(--card);
+        margin: 0 0 15px 0;
+    }
+
+    header > .top > h1 {
+        margin: 20px 20px 0 20px;
+        font-size: 12pt;
+        float: right;
+        color: var(--text-color);
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .top > a >.logo {
+        margin: 10px 0 10px 22px;
+        width: 80px;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--page-color) ;
+        font-family: "Apple SD Gothic Neo", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card {
+        z-index: -1;
+        margin: 10px auto;
+        border-radius: 10px;
+        width: 75.56%;
+        padding: 10px 0 10px 0;
+        background-color: var(--card);
+        color: var(--text-color);
+    }
+
+    .card > h1 {
+        margin: 8px 0 15px 0;
+        padding: 0 0 0 25px;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    .card > .more {
+        font-size: 10pt;
+        margin: -25px 15px 20px 0;
+        padding: 4px 0 0 0;
+        float: right;
+    }
+
+    .cardLogo {
+        margin: 3px 5px 0 15px;
+        float: left;
+        width: 25px;
+    }
+
+    .articleTypeA {
+        float: left;
+        border-radius: 10px;
+        margin: 5px 12px 0 10px;
+        padding: 5px 2px 0 2px;
+        width: 25px;
+        height: 23px;
+        text-align: center;
+
+    }
+
+    .articleTypeA > a {
+        width: 100%;
+        height: 100%;
+        font-size: 8pt;
+        color: var(--blue-card-text);
+        font-weight: bold;
+    }
+
+    .card > dl {
+        margin: 0 auto;
+        width: 90%;
+        text-decoration-color: #454545;
+        font-weight: normal;
+    }
+
+    .card > dl > .listDeco {
+        margin: 5px;
+        padding: 2% 0 3% 0;
+        border-radius: 10px;
+        background: var(--notice-list-background);
+    }
+
+    .card > dl > .listDeco > a{
+        font-size: 11pt;
+    }
+
+    .card > dl > .listDeco > dt {
+        width: 80%;
+        margin: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 6pt;
+    }
+
+    .card > dl > .listDeco > dd {
+        margin: 2px 0 0 40px;
+        font-size: 8pt;
+    }
+
+    .card > div {
+        text-align: center;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 95.56%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .mapA {
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 50px;
+        font-size: 9pt;
+        color: var(--text-color);
+    }
+
+    .card > .info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .datafail {
+        text-align: center;
+        font-size: 8pt;
+    }
+
+    .maplogo {
+        float: left;
+        width: 15px;
+        margin: 0 5px 0 0;
+    }
+}
+
+/*PC*/
+@media all and (min-width:1025px) {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        background-color: var(--card);
+        margin: 0 0 15px 0;
+    }
+
+    header > .top > h1 {
+        margin: 20px 28% 0 20px;
+        font-size: 12pt;
+        float: right;
+        color: var(--text-color);
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .top > a >.logo {
+        margin: 10px 0 10px 28%;
+        width: 80px;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--page-color) ;
+        font-family: "Apple SD Gothic Neo", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card {
+        z-index: -1;
+        margin: 10px auto;
+        border-radius: 10px;
+        width: 45.56%;
+        padding: 10px 0 10px 0;
+        background-color: var(--card);
+        color: var(--text-color);
+    }
+
+    .card > h1 {
+        margin: 8px 0 15px 0;
+        padding: 0 0 0 25px;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    .card > .more {
+        font-size: 10pt;
+        margin: -25px 15px 20px 0;
+        padding: 4px 0 0 0;
+        float: right;
+    }
+
+    .cardLogo {
+        margin: 3px 5px 0 15px;
+        float: left;
+        width: 25px;
+    }
+
+    .articleTypeA {
+        float: left;
+        border-radius: 10px;
+        margin: 5px 12px 0 10px;
+        padding: 5px 2px 0 2px;
+        width: 25px;
+        height: 23px;
+        text-align: center;
+
+    }
+
+    .articleTypeA > a {
+        width: 100%;
+        height: 100%;
+        font-size: 8pt;
+        color: var(--blue-card-text);
+        font-weight: bold;
+    }
+
+    .card > dl {
+        margin: 0 auto;
+        width: 90%;
+        text-decoration-color: #454545;
+        font-weight: normal;
+    }
+
+    .card > dl > .listDeco {
+        margin: 5px;
+        padding: 2% 0 3% 0;
+        border-radius: 10px;
+        background: var(--notice-list-background);
+    }
+
+    .card > dl > .listDeco > a{
+        font-size: 11pt;
+    }
+
+    .card > dl > .listDeco > dt {
+        width: 80%;
+        margin: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 6pt;
+    }
+
+    .card > dl > .listDeco > dd {
+        margin: 2px 0 0 40px;
+        font-size: 8pt;
+    }
+
+    .card > div {
+        text-align: center;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 95.56%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .mapA {
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 50px;
+        font-size: 9pt;
+        color: var(--text-color);
+    }
+
+    .card > .info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .datafail {
+        text-align: center;
+        font-size: 8pt;
+    }
+
+    .maplogo {
+        float: left;
+        width: 15px;
+        margin: 0 5px 0 0;
+    }
+}

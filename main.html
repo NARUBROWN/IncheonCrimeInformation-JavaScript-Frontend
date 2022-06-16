@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+    <!-- 카카오맵 키 입력 위치-->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=제공 받은 키를 입력해주세요"></script>
+    <meta charset="UTF-8">
+    <title>빅데이터 프로젝트 : CCTV와 범죄 발생률의 상관관계</title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="main.html"><img class="logo" src="img/logo.png" alt="재능대학교 로고"></a>
+            <h1>빅데이터 프로젝트 : CCTV와 범죄 발생률의 상관관계</h1>
+        </div>
+    </header>
+    <div class="card">
+        <img class="cardLogo" src="img/inch.png" alt="logo">
+        <h1>인천광역시 지도</h1>
+        <a class="more">(모든 데이터는 1000명을 기준으로 평가하였습니다.)</a>
+        <div class="map" id="map"></div>
+    </div>
+    <script type="text/javascript" src="script/map.js"></script>
+    <script type="text/javascript" src="script/api.js"></script>
+</body>
+</html>
